@@ -10,7 +10,7 @@ function mostrar()
     edad = document.getElementById("laEdad").value;
 
 
-    alert("Su nombre es " + nombre + "y tiene " + edad + "años.");
+    alert("El nombre de usted es " + nombre + " y tiene " + edad + " años.");
 
 
 
