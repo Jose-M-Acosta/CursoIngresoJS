@@ -20,7 +20,7 @@ function mostrar() {
 			numIngresado = parseInt(prompt('No es un numero! Ingrese un numero: '));
 		}
 
-		if (numIngresado / 2 == 0) {
+		if (numIngresado % 2 == 0) {
 			conPar++;
 		}
 
