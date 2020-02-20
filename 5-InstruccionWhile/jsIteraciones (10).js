@@ -43,7 +43,7 @@ function mostrar() {
 
 
 	proPosi = sumaPosi / conPosi;
-	proNegi = sumaNEgi / conNegi;
+	proNegi = sumaNegi / conNegi;
 
 	differencia = sumaPosi - sumaNegi;
 
