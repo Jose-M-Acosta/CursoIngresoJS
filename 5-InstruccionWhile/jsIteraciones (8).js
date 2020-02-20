@@ -10,7 +10,7 @@ function mostrar() {
 		numIngresado = parseInt(prompt('Ingrese un numero: '));
 
 		while (isNaN(numIngresado)) {
-			numIngresado = parseInt(prompt('No es un numero! Ingrese unnumero: '));
+			numIngresado = parseInt(prompt('No es un numero! Ingrese un numero: '));
 
 		}
 

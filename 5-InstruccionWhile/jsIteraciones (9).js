@@ -4,18 +4,35 @@ function mostrar() {
 	var numIngresado;
 	var numMax;
 	var numMin;
-	var respuesta = 'si';
+	var respuesta = 's';
 	// declarar variables
 
 	do {
-		numIngresado = parseInt(prompt('Ingrese unnumero: '));
+		numIngresado = parseInt(prompt('Ingrese un numero: '));
+
 
 		while (isNaN(numIngresado)) {
-			numIngresado = parseInt(prompt('No es un numero! Ingrese unnumero: '));
+			numIngresado = parseInt(prompt('No es un numero! Ingrese un numero: '));
 		}
 
+		if (contador == 0) {
+			numMin = numIngresado;
+			numMax = numIngresado;
+		}
 
-	} while (respuesta != 'no');
+		if (numIngresado > numMax) {
+			numMax = numIngresado;
+
+		}
+
+		if (numIngresado < numMin) {
+			numMin = numIngresado;
+		}
+
+		respuesta = prompt('desea Ingresar otro numero? ');
+		contador++;
+
+	} while (respuesta == 's');
 
 
 	document.getElementById("maximo").value = numMax;
