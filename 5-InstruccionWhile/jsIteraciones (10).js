@@ -41,11 +41,14 @@ function mostrar() {
 		respuesta = prompt('desea Ingresar otro numero? ');
 	} while (respuesta == 's');
 
+	if (conPosi != 0) {
+		proPosi = sumaPosi / conPosi;
+	}
+	if (conNegi != 0) {
+		proNegi = sumaNegi / conNegi;
+	}
 
-	proPosi = sumaPosi / conPosi;
-	proNegi = sumaNegi / conNegi;
-
-	differencia = sumaPosi - sumaNegi;
+	differencia = conPosi - conNegi;
 
 
 	document.write('1.Suma de los Negativos: ' + sumaNegi + '</br>');
